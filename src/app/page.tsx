@@ -1,8 +1,5 @@
+import Dashboard from '@/app/dashboard/page'
 
 export default function Home() {
-  return (
-    <main className="">
-      hello
-    </main>
-  );
+  return <Dashboard />
 }
