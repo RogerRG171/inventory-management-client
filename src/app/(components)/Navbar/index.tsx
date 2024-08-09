@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
           <div className="relative">
             <Bell className="cursor-pointer text-gray-500" size={24} />
-            <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-[0.4rem] py-1 text-xs font-semibold leading-none bg-red-50 rounded-full">
+            <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-[0.4rem] py-1 text-xs font-semibold leading-none bg-red-500 rounded-full">
               3
             </span>
           </div>
