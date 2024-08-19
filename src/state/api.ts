@@ -25,8 +25,8 @@ export interface PurchaseSummary {
 
 export interface ExpenseSummary {
   expenseSummaryId: string
-  totalPurchased: number
-  changePercentage?: number
+  totalExpenses: number
+  date: string
 }
 
 export interface ExpenseByCategorySummary {
@@ -44,7 +44,7 @@ export interface DashboardMetrics {
   expenseByCategorySummary: ExpenseByCategorySummary[]
 }
 export const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_BASE_URL }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL }),
   reducerPath: 'api',
   tagTypes: ['DashboardMetrics'],
   endpoints: (build) => ({
