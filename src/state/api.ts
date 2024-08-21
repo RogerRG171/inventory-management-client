@@ -40,8 +40,8 @@ export interface DashboardMetrics {
   popularProducts: Product[]
   salesSummary: SalesSummary[]
   purchaseSummary: PurchaseSummary[]
-  expenseSummary: ExpenseSummary[]
-  expenseByCategorySummary: ExpenseByCategorySummary[]
+  expensesSummary: ExpenseSummary[]
+  expensesByCategory: ExpenseByCategorySummary[]
 }
 export const api = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL }),
