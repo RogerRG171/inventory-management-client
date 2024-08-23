@@ -138,7 +138,7 @@ const CardExpenseSummary = () => {
           {/* Footer */}
           <div>
             <hr />
-            <div className="mt-3 flex justify-between px-7 mb-4">
+            <div className="my-2 flex justify-between px-7">
               <div className="pt-2">
                 <p className="text-sm">
                   Average:{' '}
