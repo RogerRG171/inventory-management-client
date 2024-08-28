@@ -20,6 +20,7 @@ const CreateProductModal = ({
   onClose,
   onCreate,
 }: CreateProductModalProps) => {
+  // states
   const [formData, setFormData] = useState({
     productId: v4(),
     name: '',
@@ -30,7 +31,7 @@ const CreateProductModal = ({
   // styles
   const labelCssStyles = 'block text-sm font-medium text-gray-700'
   const inputCssStyles =
-    'block w-full mb-2 p-2 border-gray-500 border-2 rounded-md !outline-none text-white'
+    'block w-full mb-2 p-2 border-gray-500 border-2 rounded-md !outline-none text-gray-500'
 
   // functions
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
