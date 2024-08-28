@@ -122,7 +122,7 @@ const Sidebar = () => {
         <SidebarLink
           href="/expenses"
           icon={CircleDollarSign}
-          label="expenses"
+          label="Expenses"
           isCollapsed={isSidebarCollapsed}
         />
       </div>
