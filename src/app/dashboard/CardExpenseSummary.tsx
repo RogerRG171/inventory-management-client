@@ -96,7 +96,7 @@ const CardExpenseSummary = () => {
                     ))}
                   </Pie>
                   <Tooltip
-                    label={(entry) => entry.name}
+                    label={(entry: { name: string }) => entry.name}
                     formatter={(value) => (
                       <p className="text-purple-500"> ${value}m</p>
                     )}
@@ -169,6 +169,14 @@ const renderCustomizedLabel = ({
   outerRadius,
   percent,
   index,
+}: {
+  cx: number
+  cy: number
+  midAngle: number
+  innerRadius: number
+  outerRadius: number
+  percent: number
+  index: number
 }) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 0.1
   const x = cx + radius * Math.cos(-midAngle * RADIAN)
